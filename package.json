@@ -1,0 +1,18 @@
+{
+  "name": "eflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Aylay/extreme-loopz.git",
+  "author": {
+    "name": "Beavers",
+    "email": "lattali@beavers-agency.fr",
+    "url": "https://beavers-agency.fr/"
+  },
+  "scripts": {
+    "css:watch": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
