@@ -10,4 +10,4 @@ if (is_admin()) {
 }
 include($templatepath.'/functions/all.php');
 
-add_theme_support('post-thumbnails');
+// add_theme_support('post-thumbnails');

@@ -9,6 +9,93 @@ Theme Name: WordPress + Tailwind
 @layer base {
   html {
     font-size: 10px;
-    @apply font-base;
+    @apply font-base text-heavy-metal;
   }
+}
+
+@layer components {
+  .menu-nav li:not(:last-child) {
+    @apply px-8 relative;
+  }
+  .menu-nav li:not(:last-child)::before {
+    @apply content-[''] absolute top-1/2 right-0 h-[3.4rem] w-[.1rem] bg-gallery transform -translate-y-1/2;
+  }
+  .menu-nav li:last-child {
+    @apply pl-8;
+  }
+  .menu-nav a {
+    @apply text-m font-bold text-heavy-metal transition-colors hover:text-opacity-50;
+  }
+
+  .menu-footer a {
+    @apply text-s text-heavy-metal transition-colors hover:text-opacity-50;
+  }
+
+  .link {
+    @apply inline-block relative before:absolute before:-bottom-2 before:left-0 before:content-[''] before:h-[.1rem] before:bg-heavy-metal before:transition-all;
+  }
+  .link.n2 {
+    @apply before:w-12 hover:before:w-full;
+  }
+  .link.n3 {
+    @apply before:w-8 hover:before:w-full;
+  }
+
+  .service {
+    @apply border border-t-0 border-solid border-gallery odd:border-r-0 first-of-type:border-t last-of-type:border-r;
+  }
+
+  .header-title {
+    @apply text-h1 font-bold;
+  }
+  .header-title strong {
+    @apply linear-text bg-header;
+  }
+}
+
+@layer utilities {
+  .linear-text {
+    @apply bg-clip-text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.burger .top {
+  stroke-dasharray: 40 121;
+}
+.burger .bottom {
+  stroke-dasharray: 40 121;
+}
+.burger.active {
+  transform: rotate(45deg);
+}
+.burger.active .top {
+  stroke-dashoffset: -68px;
+}
+.burger.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 300ms, stroke-dashoffset 300ms, stroke 300ms;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica.woff2') format('woff2'),
+       url('../fonts/helvetica.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica-bold.woff2') format('woff2'),
+       url('../fonts/helvetica-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
