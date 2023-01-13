@@ -1,10 +1,12 @@
 <div class="flex flex-col gap-8">
   <?php if ($args['img']) : ?>
-    <img
-      src="<?= $args['img']['url']; ?>"
-      alt="<?= $args['img']['alt']; ?>"
-      class="<?= $args['classImg']; ?> w-full h-auto"
-    >
+    <div>
+      <img
+        src="<?= $args['img']['url']; ?>"
+        alt="<?= $args['img']['alt']; ?>"
+        class="<?= $args['classImg']; ?> h-full w-auto"
+      >
+    </div>
   <?php endif; ?>
   <?php if ($args['title']) : ?>
   <h3 class="text-h4 font-bold">

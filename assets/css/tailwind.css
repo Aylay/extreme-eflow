@@ -51,6 +51,38 @@ Theme Name: WordPress + Tailwind
   .header-title strong {
     @apply linear-text bg-header;
   }
+
+  .cta {
+    @apply border border-solid border-heavy-metal py-4 text-m font-bold inline-block hover:border-[#949594] hover:text-white text-heavy-metal hover:bg-heavy-metal hover:bg-opacity-50 transition-colors;
+  }
+  .cta svg path {
+    @apply stroke-heavy-metal transition-colors;
+  }
+  .cta:hover svg path {
+    @apply stroke-white;
+  }
+
+  .wysiwyg {
+    @apply flex flex-col gap-8;
+  }
+  .wysiwyg p {
+    @apply text-m;
+  }
+  .wysiwyg h4 {
+    @apply text-h4 font-bold;
+  }
+  .wysiwyg ul {
+    @apply pl-4 flex flex-col gap-4;
+  }
+  .wysiwyg ul li {
+    @apply pl-12 text-m relative;
+  }
+  .wysiwyg ul li::before {
+    @apply absolute content-[''] w-[1.3rem] h-[.1rem] bg-heavy-metal left-0 top-4;
+  }
+  .wysiwyg a {
+    @apply text-heavy-metal text-opacity-50 underline;
+  }
 }
 
 @layer utilities {
@@ -90,6 +122,14 @@ Theme Name: WordPress + Tailwind
        url('../fonts/helvetica.woff') format('woff');
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica-oblique.woff2') format('woff2'),
+       url('../fonts/helvetica-oblique.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {

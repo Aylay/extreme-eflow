@@ -43,7 +43,7 @@ get_header();
       'services'    => $block_2['mod3_services'],
       'class'       => 'pb-40',
       'classBlock'  => 'h-[40rem]',
-      'classBlockImg'  => 'max-w-[12.5rem]'
+      'classBlockImg'  => 'max-h-[5.5rem]'
     )
   );
 ?>

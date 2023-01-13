@@ -1,9 +1,9 @@
 {
-    "key": "group_63c0104203911",
-    "title": "Template HP",
+    "key": "group_63c026599ed8e",
+    "title": "Template Service",
     "fields": [
         {
-            "key": "field_63c010423f45d",
+            "key": "field_63c02659eafcc",
             "label": "Header",
             "name": "header",
             "aria-label": "",
@@ -22,12 +22,12 @@
             "display": "group",
             "layout": "block",
             "prefix_label": 0,
-            "prefix_name": 0
+            "prefix_name": 1
         },
         {
-            "key": "field_63c01117bcc11",
-            "label": "Bloc 1",
-            "name": "block_1",
+            "key": "field_63c02674eafcd",
+            "label": "Image full",
+            "name": "main_img",
             "aria-label": "",
             "type": "clone",
             "instructions": "",
@@ -39,7 +39,7 @@
                 "id": ""
             },
             "clone": [
-                "group_63bd7cf0a29c7"
+                "group_63c0261c6ba7f"
             ],
             "display": "group",
             "layout": "block",
@@ -47,7 +47,54 @@
             "prefix_name": 1
         },
         {
-            "key": "field_63c01144bcc12",
+            "key": "field_63c0341956bb9",
+            "label": "Blocs",
+            "name": "blocks",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter un élément",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_63c0342656bba",
+                    "label": "Bloc",
+                    "name": "block",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_63c033ae2cd4d"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 1,
+                    "parent_repeater": "field_63c0341956bb9"
+                }
+            ]
+        },
+        {
+            "key": "field_63c12bb2fd60a",
             "label": "Bloc 2",
             "name": "block_2",
             "aria-label": "",
@@ -61,28 +108,6 @@
                 "id": ""
             },
             "clone": [
-                "group_63bfd4dc57d05"
-            ],
-            "display": "group",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 1
-        },
-        {
-            "key": "field_63c0115fbcc13",
-            "label": "Bloc 3",
-            "name": "block_3",
-            "aria-label": "",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
                 "group_63bd7cf0a29c7"
             ],
             "display": "group",
@@ -91,11 +116,11 @@
             "prefix_name": 1
         },
         {
-            "key": "field_63c0116dbcc14",
-            "label": "Bloc 4",
-            "name": "block_4",
+            "key": "field_63c12d69043a8",
+            "label": "Blocs 3",
+            "name": "blocks_3",
             "aria-label": "",
-            "type": "clone",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -104,18 +129,43 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "group_63bfd4dc57d05"
-            ],
-            "display": "group",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 1
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter un élément",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_63c12d87043a9",
+                    "label": "Bloc",
+                    "name": "block",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_63c033ae2cd4d"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 1,
+                    "parent_repeater": "field_63c12d69043a8"
+                }
+            ]
         },
         {
-            "key": "field_63c01182bcc16",
-            "label": "Bloc 5",
-            "name": "block_5",
+            "key": "field_63c138c87674b",
+            "label": "Bloc 4",
+            "name": "block_4",
             "aria-label": "",
             "type": "clone",
             "instructions": "",
@@ -135,7 +185,7 @@
             "prefix_name": 1
         },
         {
-            "key": "field_63c0117abcc15",
+            "key": "field_63c139411cac0",
             "label": "Bloc 6",
             "name": "block_6",
             "aria-label": "",
@@ -152,7 +202,7 @@
                 "group_63bd7cf0a29c7"
             ],
             "display": "group",
-            "layout": "block",
+            "layout": "",
             "prefix_label": 0,
             "prefix_name": 1
         }
@@ -160,9 +210,9 @@
     "location": [
         [
             {
-                "param": "page_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "front_page"
+                "value": "template\/page-service.php"
             }
         ]
     ],
@@ -177,5 +227,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673616389
+    "modified": 1673616431
 }

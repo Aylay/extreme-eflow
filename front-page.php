@@ -18,7 +18,7 @@ $block_6 = get_field('block_6');
     '4',
     array(
       'title'   => $header['mod4_title'],
-      'more'   => $header['mod4_more'],
+      'more'    => $header['mod4_more']
     )
   );
 ?>
@@ -46,7 +46,7 @@ $block_6 = get_field('block_6');
       'services'    => $block_2['mod3_services'],
       'class'       => 'pb-40',
       'classBlock'  => 'h-[40rem]',
-      'classBlockImg'  => 'max-w-[12.5rem]'
+      'classBlockImg'  => 'max-h-[5.5rem]'
     )
   );
 ?>
@@ -74,7 +74,7 @@ $block_6 = get_field('block_6');
       'services'    => $block_4['mod3_services'],
       'class'       => 'pb-40',
       'classBlock'  => 'h-[28rem]',
-      'classBlockImg'  => 'max-w-[3rem]'
+      'classBlockImg'  => 'max-h-[3rem]'
     )
   );
 ?>
@@ -104,8 +104,5 @@ $block_6 = get_field('block_6');
     )
   );
 ?>
-
-
-
 
 <?php get_footer(); ?>
