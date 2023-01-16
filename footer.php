@@ -42,6 +42,34 @@
 <script defer src="<?php bloginfo('template_directory');?>/assets/js/jquery.min.js"></script>
 <script defer src="<?php bloginfo('template_directory');?>/assets/js/menu.js"></script>
 
+
+<?php
+  if (is_page_template('template/page-service.php')) {
+    $block_5 = get_field('bloc_5');
+    if ($block_5) {
+?>
+  <script defer src="<?php bloginfo('template_directory');?>/assets/js/swiper.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      const swiper = new Swiper('.swiper-refs', {
+        // Optional parameters
+        // loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 0,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-refs-button-next',
+          prevEl: '.swiper-refs-button-prev',
+        }
+      });
+    });
+  </script>
+<?php
+    }
+  }
+?>
+
 <?php wp_footer(); ?>
 
 </body>

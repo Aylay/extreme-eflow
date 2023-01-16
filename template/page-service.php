@@ -11,6 +11,7 @@ $blocks = get_field('blocks');
 $block_2 = get_field('block_2');
 $blocks_3 = get_field('blocks_3');
 $block_4 = get_field('block_4');
+$block_5 = get_field('bloc_5');
 $block_6 = get_field('block_6');
 
 ?>
@@ -91,6 +92,20 @@ $block_6 = get_field('block_6');
       array(
         'title'       => $block_4['mod5_title'],
         'logos'       => $block_4['mod5_logos'],
+        'class'       => 'pb-40'
+      )
+    );
+  }
+?>
+
+<?php
+  if ($block_5) {
+    get_template_part(
+      'template/module',
+      '8',
+      array(
+        'title'       => $block_5['mod8_title'],
+        'refs'       => $block_5['mod8_refs'],
         'class'       => 'pb-40'
       )
     );

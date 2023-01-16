@@ -16,6 +16,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- STYLES -->
+<?php
+  if (is_page_template('template/page-service.php')) {
+    $block_5 = get_field('bloc_5');
+    if ($block_5) {
+?>
+  <link href="<?php bloginfo('template_directory');?>/assets/css/swiper.min.css" rel="stylesheet">
+<?php
+    }
+  }
+?>
 <link href="<?php bloginfo('template_directory');?>/assets/css/styles.css" rel="stylesheet">
 <!-- end STYLES -->
 

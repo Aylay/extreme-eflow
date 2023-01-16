@@ -185,6 +185,28 @@
             "prefix_name": 1
         },
         {
+            "key": "field_63c5184225eb6",
+            "label": "Bloc 5",
+            "name": "bloc_5",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_63c51778b84c0"
+            ],
+            "display": "group",
+            "layout": "",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
             "key": "field_63c139411cac0",
             "label": "Bloc 6",
             "name": "block_6",
@@ -227,5 +249,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673616431
+    "modified": 1673861218
 }
