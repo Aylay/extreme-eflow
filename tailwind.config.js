@@ -5,7 +5,8 @@ module.exports = {
       white: '#FFFFFF',
       black: '#000000',
       'heavy-metal': '#2A2B2A',
-      'gallery': '#EAEAEA'
+      'gallery': '#EAEAEA',
+      'torch-red': '#FF133E'
     },
     fontFamily: {
       'base': ['Helvetica', 'Arial', 'sans-serif']
@@ -54,7 +55,10 @@ module.exports = {
       },
       backgroundImage: {
         'text': 'linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(45deg, #F8EB8C 0%, #D5F779 47.78%, #C2F8FC 100%)',
-        'header': 'linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(45deg, #F8EB8C 0%, #D5F779 47.78%, #C2F8FC 100%)'
+        'header': 'linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(45deg, #F8EB8C 0%, #D5F779 47.78%, #C2F8FC 100%)',
+        'airplane': 'url(../img/svg/airplane.svg)',
+        'airplane-hover': 'url(../img/svg/airplane-hover.svg)',
+        'form-check': 'url(../img/svg/form-check.svg)'
       }
     },
   },

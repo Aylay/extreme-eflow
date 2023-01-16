@@ -23,6 +23,9 @@ Theme Name: WordPress + Tailwind
   .menu-nav li:last-child {
     @apply pl-8;
   }
+  .menu-nav .current-menu-item a {
+    @apply text-heavy-metal text-opacity-50;
+  }
   .menu-nav a {
     @apply text-m font-bold text-heavy-metal transition-colors hover:text-opacity-50;
   }
@@ -115,6 +118,56 @@ Theme Name: WordPress + Tailwind
   stroke-width: 5.5;
   stroke-linecap: round;
 }
+
+.frm_style_style-formidable.with_frm_style .frm_form_field {
+  @apply relative !pt-4 !mb-12;
+}
+.frm_style_style-formidable.with_frm_style .frm_form_field input,
+.frm_style_style-formidable.with_frm_style .frm_form_field textarea {
+  @apply !p-4 !w-full !border-0 !border-b !border-solid !border-heavy-metal !border-opacity-10 !shadow-none !text-s !font-bold !rounded-none !text-heavy-metal;
+}
+.frm_style_style-formidable.with_frm_style .frm_form_field select {
+  @apply !px-4 !pt-4 !pb-2 !w-full !border-0 !border-b !border-solid !border-heavy-metal !border-opacity-10 !shadow-none !text-s !font-bold !rounded-none !text-heavy-metal;
+}
+.frm_style_style-formidable.with_frm_style .frm_form_field input::placeholder,
+.frm_style_style-formidable.with_frm_style .frm_form_field textarea::placeholder {
+  @apply !text-heavy-metal ;
+}
+.frm_style_style-formidable.with_frm_style .frm_html_container {
+  @apply flex flex-col gap-2;
+}
+.frm_style_style-formidable.with_frm_style .frm_html_container p {
+  @apply text-heavy-metal text-opacity-50 text-xs;
+}
+.frm_style_style-formidable.with_frm_style .frm_error {
+  @apply !absolute !-bottom-6 !text-xxs !left-0 !text-torch-red;
+}
+.frm_style_style-formidable.with_frm_style .frm_submit {
+  @apply flex justify-center;
+}
+.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit {
+  @apply !border !border-solid !border-heavy-metal !text-m !font-bold !inline-block hover:!border-[#949594] hover:!text-white !text-heavy-metal hover:!bg-heavy-metal hover:!bg-opacity-50 !transition-colors !bg-white !rounded-none !py-6 !pl-8 !pr-20 !relative;
+}
+.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:hover::before {
+  @apply bg-airplane-hover;
+}
+.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:before {
+  @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 right-6 bg-airplane bg-cover bg-no-repeat content-[''] transition-all;
+}
+.frm_style_style-formidable.with_frm_style .frm_error_style {
+  @apply hidden;
+}
+
+/* CONFIRMATION */
+.frm_forms .frm_message {
+  @apply !pt-16 !bg-form-check !bg-no-repeat !bg-white !border-none !m-0;
+  background-position: top center;
+}
+.frm_forms .frm_message p {
+  @apply text-m font-bold text-center !text-heavy-metal;
+}
+/* end FORMS */
+
 
 @font-face {
   font-family: 'Helvetica';
