@@ -41,10 +41,6 @@ Theme Name: WordPress + Tailwind
     @apply opacity-100 visible;
   }
 
-  .menu-block.active::before {
-    @apply translate-x-0;
-  }
-
   .menu-footer a {
     @apply text-s text-heavy-metal transition-colors hover:text-opacity-50;
   }
@@ -56,7 +52,7 @@ Theme Name: WordPress + Tailwind
     @apply py-12;
   }
   .menu-cache li a {
-    @apply text-h3 font-bold;
+    @apply text-h3-m lg:text-h3 font-bold;
   }
 
   .link {
@@ -70,11 +66,11 @@ Theme Name: WordPress + Tailwind
   }
 
   .service {
-    @apply border border-t-0 border-solid border-gallery odd:border-r-0 first-of-type:border-t last-of-type:border-r;
+    @apply border border-t-0 border-solid border-gallery lg:odd:border-r-0 first-of-type:border-t lg:last-of-type:border-r;
   }
 
   .header-title {
-    @apply text-h1 font-bold;
+    @apply text-h1-m lg:text-h1 font-bold;
   }
   .header-title strong {
     @apply linear-text bg-header;
@@ -97,7 +93,7 @@ Theme Name: WordPress + Tailwind
     @apply text-m;
   }
   .wysiwyg h4 {
-    @apply text-h4 font-bold;
+    @apply text-h4-m lg:text-h4 font-bold;
   }
   .wysiwyg ul {
     @apply pl-4 flex flex-col gap-4;

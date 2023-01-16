@@ -1,6 +1,6 @@
 <div class="<?= $args['class']; ?>">
   <div class="max-w-1176px mx-auto">
-    <h3 class="pb-20 px-20 text-h2 font-bold">
+    <h3 class="pb-20 px-20 text-h2-m lg:text-h2 font-bold">
       <?= $args['title']; ?>
     </h3>
   </div>
@@ -9,8 +9,8 @@
     <div class="swiper-wrapper">
       <?php foreach ($args['refs'] as $ref): ?>
         <div class="swiper-slide h-auto p-20 w-auto border-l border-y border-solid border-heavy-metal border-opacity-10 last:border-r">
-          <div class="w-[487px] flex flex-col gap-8">
-            <div class="h-[35rem] w-full">
+          <div class="lg:w-[487px] flex flex-col gap-8">
+            <div class="h-[15rem] lg:h-[35rem] w-full">
               <img
                 src="<?= $ref['img']['url']; ?>"
                 alt="<?= $ref['img']['alt']; ?>"

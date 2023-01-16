@@ -13,20 +13,16 @@ module.exports = {
     },
     fontSize: {
       'h1': ['4.6rem', {
-        lineHeight: '1.3',
-        fontWeight: '700'
+        lineHeight: '1.3'
       }],
       'h2': ['3rem', {
-        lineHeight: '1.3',
-        fontWeight: '700'
+        lineHeight: '1.3'
       }],
       'h3': ['2.6rem', {
-        lineHeight: '1.3',
-        fontWeight: '700'
+        lineHeight: '1.3'
       }],
       'h4': ['1.8rem', {
-        lineHeight: '1.3',
-        fontWeight: '700'
+        lineHeight: '1.3'
       }],
       'm': ['1.6rem', {
         lineHeight: '1.3'
@@ -44,8 +40,22 @@ module.exports = {
         lineHeight: '1.3'
       }],
       'cta2': ['1.4rem', {
-        lineHeight: '1.3',
-        fontWeight: '700'
+        lineHeight: '1.3'
+      }],
+      'h1-m': ['2.8rem', {
+        lineHeight: '1.3'
+      }],
+      'h2-m': ['2.2rem', {
+        lineHeight: '1.3'
+      }],
+      'h3-m': ['1.8rem', {
+        lineHeight: '1.3'
+      }],
+      'h4-m': ['1.6rem', {
+        lineHeight: '1.3'
+      }],
+      'quote-m': ['2rem', {
+        lineHeight: '1.3'
       }]
     },
     extend: {
@@ -72,6 +82,7 @@ module.exports = {
     'grid-cols-8',
     'grid-cols-9',
     'grid-cols-10',
+    'overflow-y-hidden'
   ],
   plugins: [],
 }

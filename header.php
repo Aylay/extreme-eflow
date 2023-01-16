@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" class="relative">
+<html lang="fr" dir="ltr">
 <head>
   <?php if (get_field('code_tag_manager', 'options')): ?>
     <!-- Google Tag Manager -->
@@ -56,52 +56,54 @@
 <?php
   $logo = get_field('logo', 'options');
 ?>
-<body class="max-w-1512px mx-auto">
-  <?php if (get_field('code_tag_manager', 'options')) {
-    include "_tagmanager.php";
-  } ?>
+<body class="relative">
+  <div class="max-w-1512px mx-auto">
 
-  <header class="p-16 lg:p-20 flex justify-between items-center">
-    <a
-      href="<?= get_home_url(); ?>"
-      title="<?= get_bloginfo('name'); ?>"
-    >
-      <img
-        src="<?= $logo['url']; ?>"
-        alt="<?= $logo['alt']; ?>"
-        class="max-w-[10rem] w-full h-auto"
+    <?php if (get_field('code_tag_manager', 'options')) {
+      include "_tagmanager.php";
+    } ?>
+
+    <header class="max-lg:px-16 py-16 lg:p-20 flex justify-between items-center">
+      <a
+        href="<?= get_home_url(); ?>"
+        title="<?= get_bloginfo('name'); ?>"
       >
-    </a>
-    <div class="flex gap-16 items-center menu">
-      <?php wp_nav_menu(array(
-        'menu' => 'Header - Visible',
-        'menu_class' => 'menu-nav hidden lg:flex'
-      )); ?>
-      <div class="cursor-pointer flex items-center gap-3 burger-block">
-        <p class="text-m font-bold">
-          Menu
-        </p>
-        <div class="w-14 h-14">
-          <svg
-            class="burger transition-transform duration-400 select-none"
-            viewBox="0 0 100 100"
-          >
-            <path
-              class="line stroke-heavy-metal top"
-              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
-            />
-            <path
-              class="line stroke-heavy-metal middle"
-              d="m 70,50 h -40"
-            />
-            <path
-              class="line stroke-heavy-metal bottom"
-              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
-            />
-          </svg>
+        <img
+          src="<?= $logo['url']; ?>"
+          alt="<?= $logo['alt']; ?>"
+          class="max-w-[7rem] lg:max-w-[10rem] w-full h-auto"
+        >
+      </a>
+      <div class="flex gap-16 items-center menu">
+        <?php wp_nav_menu(array(
+          'menu' => 'Header - Visible',
+          'menu_class' => 'menu-nav hidden lg:flex'
+        )); ?>
+        <div class="cursor-pointer flex items-center gap-3 burger-block">
+          <p class="text-m font-bold">
+            Menu
+          </p>
+          <div class="w-14 h-14">
+            <svg
+              class="burger transition-transform duration-400 select-none"
+              viewBox="0 0 100 100"
+            >
+              <path
+                class="line stroke-heavy-metal top"
+                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+              />
+              <path
+                class="line stroke-heavy-metal middle"
+                d="m 70,50 h -40"
+              />
+              <path
+                class="line stroke-heavy-metal bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main role="main">
+    <main role="main">

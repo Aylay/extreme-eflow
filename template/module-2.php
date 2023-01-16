@@ -9,7 +9,7 @@
     </div>
   <?php endif; ?>
   <?php if ($args['title']) : ?>
-  <h3 class="text-h4 font-bold">
+  <h3 class="text-h4-m lg:text-h4 font-bold">
     <?= $args['title']; ?>
   </h3>
   <?php endif; ?>

@@ -6,7 +6,7 @@
 
 </main>
 
-<footer class="max-w-1176px mx-auto flex mt-24 lg:mt-52 mb-12 lg:mb-24">
+<footer class="max-w-1176px mx-auto flex max-lg:flex-col max-lg:gap-16 mt-24 lg:mt-52 mb-12 lg:mb-24 max-lg:px-16">
   <div class="flex-1 flex flex-col gap-8">
     <img
       src="<?= $logo['url']; ?>"
@@ -18,7 +18,7 @@
     </p>
   </div>
 
-  <div class="flex-1 flex justify-between gap-8">
+  <div class="flex-1 max-lg:grid max-lg:grid-cols-2 lg:flex justify-between gap-8">
     <?php wp_nav_menu(array(
       'menu' => 'Footer 1',
       'menu_class' => $footerMenuClasses
@@ -33,10 +33,11 @@
     )); ?>
   </div>
 </footer>
+</div>
 
-<div class="menu-block absolute z-10 inset-0 w-full h-screen bg-heavy-metal bg-opacity-20 opacity-0 invisible transition-all before:w-full lg:before:w-1/2 before:absolute before:top-0 before:right-0 before:h-screen before:bg-white before:transform before:translate-x-full before:transition-transform before:content-['']">
+<div class="menu-block absolute z-10 inset-0 w-screen h-screen bg-heavy-metal bg-opacity-20 opacity-0 invisible transition-all  before:w-full lg:before:w-1/2 before:absolute before:top-0 before:right-0 before:h-screen before:bg-white before:transition-transform before:content-['']">
   <div class="max-w-1512px mx-auto relative z-10 flex justify-end">
-    <div class="w-full lg:w-1/2 pr-16 lg:pr-20">
+    <div class="w-full lg:w-1/2 max-lg:px-16 pr-16 lg:pr-20">
       <div class="py-16 lg:py-20 flex justify-end items-center header-open-menu">
         <div class="cursor-pointer flex items-center gap-3 burger-block">
           <p class="text-m font-bold">
@@ -94,18 +95,31 @@
   <script defer src="<?php bloginfo('template_directory');?>/assets/js/swiper.min.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
-      const swiper = new Swiper('.swiper-refs', {
-        // Optional parameters
-        // loop: true,
-        slidesPerView: "auto",
-        spaceBetween: 0,
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-refs-button-next',
-          prevEl: '.swiper-refs-button-prev',
-        }
-      });
+      if ($(window).width() < 1024) {
+        const swiper = new Swiper('.swiper-refs', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+  
+          navigation: {
+            nextEl: '.swiper-refs-button-next',
+            prevEl: '.swiper-refs-button-prev',
+          }
+        });
+      } else {
+        const swiper = new Swiper('.swiper-refs', {
+          slidesPerView: "auto",
+          spaceBetween: 0,
+  
+          navigation: {
+            nextEl: '.swiper-refs-button-next',
+            prevEl: '.swiper-refs-button-prev',
+          }
+        });
+      }
     });
   </script>
 <?php

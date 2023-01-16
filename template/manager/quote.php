@@ -7,7 +7,7 @@
 ?>
 
 <div class="flex flex-col gap-8">
-  <p class="text-quote italic">
+  <p class="text-quote-m lg:text-quote italic">
     <?= $quote; ?>
   </p>
   <?php if (($text_1 !== '') || ($text_2 !== '')) : ?>
