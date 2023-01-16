@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr" dir="ltr" class="relative">
 <head>
   <?php if (get_field('code_tag_manager', 'options')): ?>
     <!-- Google Tag Manager -->
@@ -72,18 +72,13 @@
         class="max-w-[10rem] w-full h-auto"
       >
     </a>
-    <div class="flex gap-16 items-center">
+    <div class="flex gap-16 items-center menu">
       <?php wp_nav_menu(array(
         'menu' => 'Header - Visible',
         'menu_class' => 'menu-nav hidden lg:flex'
       )); ?>
-      <div
-        class="cursor-pointer flex items-center gap-3"
-      >
-        <p
-          id="burger-text"
-          class="text-m font-bold"
-        >
+      <div class="cursor-pointer flex items-center gap-3 burger-block">
+        <p class="text-m font-bold">
           Menu
         </p>
         <div class="w-14 h-14">

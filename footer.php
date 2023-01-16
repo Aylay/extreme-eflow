@@ -34,6 +34,49 @@
   </div>
 </footer>
 
+<div class="menu-block absolute z-10 inset-0 w-full h-screen bg-heavy-metal bg-opacity-20 opacity-0 invisible transition-all before:w-full lg:before:w-1/2 before:absolute before:top-0 before:right-0 before:h-screen before:bg-white before:transform before:translate-x-full before:transition-transform before:content-['']">
+  <div class="max-w-1512px mx-auto relative z-10 flex justify-end">
+    <div class="w-full lg:w-1/2 pr-16 lg:pr-20">
+      <div class="py-16 lg:py-20 flex justify-end items-center header-open-menu">
+        <div class="cursor-pointer flex items-center gap-3 burger-block">
+          <p class="text-m font-bold">
+            Fermer
+          </p>
+          <div class="w-14 h-14">
+            <svg
+              class="burger transition-transform duration-400 select-none"
+              viewBox="0 0 100 100"
+            >
+              <path
+                class="line stroke-heavy-metal top"
+                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+              />
+              <path
+                class="line stroke-heavy-metal middle"
+                d="m 70,50 h -40"
+              />
+              <path
+                class="line stroke-heavy-metal bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 lg:px-[15%] flex flex-col gap-16">
+        <?php wp_nav_menu(array(
+          'menu' => 'Header - Caché',
+          'menu_class' => 'menu-cache flex flex-col'
+        )); ?>
+        <?php wp_nav_menu(array(
+          'menu' => 'Header - Visible',
+          'menu_class' => 'menu-cache flex flex-col'
+        )); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--[if lt IE 9]>
 <script src="<?php bloginfo('template_directory');?>/assets/js/html5shiv.min.js"></script>
 <script src="<?php bloginfo('template_directory');?>/assets/js/respond.min.js"></script>

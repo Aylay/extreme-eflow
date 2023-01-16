@@ -14,6 +14,9 @@ Theme Name: WordPress + Tailwind
 }
 
 @layer components {
+  .menu-nav {
+    @apply opacity-100 transition-opacity;
+  }
   .menu-nav li:not(:last-child) {
     @apply px-8 relative;
   }
@@ -30,8 +33,30 @@ Theme Name: WordPress + Tailwind
     @apply text-m font-bold text-heavy-metal transition-colors hover:text-opacity-50;
   }
 
+  .menu.active .menu-nav {
+    @apply opacity-0;
+  }
+
+  .menu-block.active {
+    @apply opacity-100 visible;
+  }
+
+  .menu-block.active::before {
+    @apply translate-x-0;
+  }
+
   .menu-footer a {
     @apply text-s text-heavy-metal transition-colors hover:text-opacity-50;
+  }
+
+  .menu-cache li:not(:last-child) {
+    @apply border-b border-solid border-heavy-metal border-opacity-10;
+  }
+  .menu-cache li {
+    @apply py-12;
+  }
+  .menu-cache li a {
+    @apply text-h3 font-bold;
   }
 
   .link {
