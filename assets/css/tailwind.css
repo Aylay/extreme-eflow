@@ -92,6 +92,9 @@ Theme Name: WordPress + Tailwind
   .wysiwyg p {
     @apply text-m;
   }
+  .wysiwyg h3 {
+    @apply text-h3-m lg:text-h3 font-bold;
+  }
   .wysiwyg h4 {
     @apply text-h4-m lg:text-h4 font-bold;
   }
