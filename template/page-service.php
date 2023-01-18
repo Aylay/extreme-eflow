@@ -53,7 +53,7 @@ $block_6 = get_field('block_6');
 ?>
 
 <?php
-  if ($block_2 && $block_2['mod1_img']) {
+  if ($block_2 && $block_2['mod1_title']) {
     get_template_part(
       'template/module',
       '1',
@@ -114,7 +114,7 @@ $block_6 = get_field('block_6');
 
 
 <?php
-  if ($block_6 && $block_6['mod1_img']) {
+  if ($block_6 && $block_6['mod1_title']) {
     get_template_part(
       'template/module',
       '1',
