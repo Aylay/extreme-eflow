@@ -1,10 +1,14 @@
 <?php
   $logosNb = count($args['logos']);
 
-  if ($logosNb % 2 == 0) {
-    $cols = $logosNb / 2;
+  if ($logosNb > 4) {
+    if ($logosNb % 2 == 0) {
+      $cols = $logosNb / 2;
+    } else {
+      $cols = ($logosNb + 1) / 2;
+    }
   } else {
-    $cols = ($logosNb + 1) / 2;
+    $cols = $logosNb;
   }
 ?>
 
