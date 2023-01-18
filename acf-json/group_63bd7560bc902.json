@@ -119,6 +119,26 @@
             "new_lines": ""
         },
         {
+            "key": "field_63c7b9defddb7",
+            "label": "Copyright",
+            "name": "footer_copyright",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_63bd75f66d289",
             "label": "Page 404",
             "name": "",
@@ -238,5 +258,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673516419
+    "modified": 1674033646
 }

@@ -1,6 +1,7 @@
 <?php
   $logo = get_field('logo', 'options');
   $footer_text = get_field('footer_text', 'options');
+  $footer_copyright = get_field('footer_copyright', 'options');
   $footerMenuClasses = 'menu-footer flex flex-col gap-4';
 ?>
 
@@ -15,6 +16,9 @@
     >
     <p class="lg:max-w-[70%] w-full text-s">
       <?= $footer_text; ?>
+    </p>
+    <p class="lg:max-w-[70%] w-full text-xs">
+      <?= $footer_copyright; ?>
     </p>
   </div>
 
