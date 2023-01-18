@@ -1,7 +1,7 @@
 <?php
   $logo = get_field('logo', 'options');
   $footer_text = get_field('footer_text', 'options');
-  $footerMenuClasses = 'menu-footer flex flex-col gap-4';
+  $footerMenuClasses = 'menu-footer flex flex-col gap-4 flex-1';
 ?>
 
 </main>
