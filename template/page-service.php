@@ -112,6 +112,7 @@ $block_6 = get_field('block_6');
   }
 ?>
 
+
 <?php
   if ($block_6 && $block_6['mod1_img']) {
     get_template_part(
