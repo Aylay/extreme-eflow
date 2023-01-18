@@ -84,7 +84,7 @@ $block_6 = get_field('block_6');
   }
 ?>
 
-<?php var_dump($block_4);
+<?php
   if ($block_4 && $block_4['mod5_logos']) {
     get_template_part(
       'template/module',
