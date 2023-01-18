@@ -19,11 +19,11 @@
             </div>
             <div class="flex gap-8">
               <?php if ($ref['logo']) : ?>
-              <div>
+              <div class="w-[4rem]">
                 <img
                   src="<?= $ref['logo']['url']; ?>"
                   alt="<?= $ref['logo']['alt']; ?>"
-                  class="w-full h-auto max-w-[4rem]"
+                  class="w-full h-auto"
                 >
               </div>
               <?php endif; ?>

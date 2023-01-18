@@ -1046,6 +1046,10 @@ html {
   width: 3rem;
 }
 
+.w-\[4rem\] {
+  width: 4rem;
+}
+
 .max-w-1176px {
   max-width: 117.6rem;
 }
