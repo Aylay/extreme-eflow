@@ -1,7 +1,7 @@
 <?php
   $logo = get_field('logo', 'options');
   $footer_text = get_field('footer_text', 'options');
-  $footerMenuClasses = 'menu-footer flex flex-col gap-4 flex-1';
+  $footerMenuClasses = 'menu-footer flex flex-col gap-4';
 ?>
 
 </main>
@@ -19,18 +19,24 @@
   </div>
 
   <div class="flex-1 max-lg:grid max-lg:grid-cols-2 lg:flex justify-between gap-8">
-    <?php wp_nav_menu(array(
-      'menu' => 'Footer 1',
-      'menu_class' => $footerMenuClasses
-    )); ?>
-    <?php wp_nav_menu(array(
-      'menu' => 'Footer 2',
-      'menu_class' => $footerMenuClasses
-    )); ?>
-    <?php wp_nav_menu(array(
-      'menu' => 'Footer 3',
-      'menu_class' => $footerMenuClasses
-    )); ?>
+    <div class="flex-1">
+      <?php wp_nav_menu(array(
+        'menu' => 'Footer 1',
+        'menu_class' => $footerMenuClasses
+      )); ?>
+    </div>
+    <div class="flex-1">
+      <?php wp_nav_menu(array(
+        'menu' => 'Footer 2',
+        'menu_class' => $footerMenuClasses
+      )); ?>
+    </div>
+    <div class="flex-1">
+      <?php wp_nav_menu(array(
+        'menu' => 'Footer 3',
+        'menu_class' => $footerMenuClasses
+      )); ?>
+    </div>
   </div>
 </footer>
 </div>
