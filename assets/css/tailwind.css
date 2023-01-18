@@ -52,7 +52,7 @@ Theme Name: WordPress + Tailwind
     @apply py-12;
   }
   .menu-cache li a {
-    @apply text-h3-m lg:text-h3 font-bold;
+    @apply text-h3-m lg:text-h3 font-bold text-heavy-metal transition-colors hover:text-opacity-50;
   }
 
   .link {

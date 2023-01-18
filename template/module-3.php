@@ -1,5 +1,5 @@
 <div class="max-w-1176px mx-auto grid grid-cols-1 lg:grid-cols-2 <?= $args['class']; ?> items-end max-lg:px-16">
-  <h2 class="pb-8 lg:pl-20 lg:pb-20 lg:pr-40 lg:flex flex-col justify-end text-h2-m lg:text-h2 font-bold lg:border-b border-solid border-gallery">
+  <h2 class="pb-8 lg:pl-20 lg:pb-40 lg:pr-40 lg:flex flex-col justify-end text-h2-m lg:text-h2 font-bold lg:border-b border-solid border-gallery">
     <?= $args['title']; ?>
   </h2>
   <?php foreach ($args['services'] as $service) : ?>
