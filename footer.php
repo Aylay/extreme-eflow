@@ -66,11 +66,11 @@
       </div>
       <div class="mt-12 lg:px-[15%] flex flex-col gap-16">
         <?php wp_nav_menu(array(
-          'menu' => 'Header - Caché',
+          'menu' => 'Menu caché',
           'menu_class' => 'menu-cache flex flex-col'
         )); ?>
         <?php wp_nav_menu(array(
-          'menu' => 'Header - Visible',
+          'menu' => 'Menu visible',
           'menu_class' => 'menu-cache flex flex-col'
         )); ?>
       </div>

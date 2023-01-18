@@ -76,7 +76,7 @@
       </a>
       <div class="flex gap-16 items-center menu">
         <?php wp_nav_menu(array(
-          'menu' => 'Header - Visible',
+          'menu' => 'Menu visible',
           'menu_class' => 'menu-nav hidden lg:flex'
         )); ?>
         <div class="cursor-pointer flex items-center gap-3 burger-block">
