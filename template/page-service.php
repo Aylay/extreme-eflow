@@ -84,8 +84,8 @@ $block_6 = get_field('block_6');
   }
 ?>
 
-<?php
-  if ($block_4) {
+<?php var_dump($block_4);
+  if ($block_4 && $block_4['mod5_logos']) {
     get_template_part(
       'template/module',
       '5',
@@ -99,7 +99,7 @@ $block_6 = get_field('block_6');
 ?>
 
 <?php
-  if ($block_5) {
+  if ($block_5 && $block_5['mod8_refs']) {
     get_template_part(
       'template/module',
       '8',
