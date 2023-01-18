@@ -19,19 +19,19 @@
   </div>
 
   <div class="flex-1 max-lg:grid max-lg:grid-cols-2 lg:flex justify-between gap-8">
-    <div class="flex-1">
+    <div class="flex-1 pr-16">
       <?php wp_nav_menu(array(
         'menu' => 'Footer 1',
         'menu_class' => $footerMenuClasses
       )); ?>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 pr-16">
       <?php wp_nav_menu(array(
         'menu' => 'Footer 2',
         'menu_class' => $footerMenuClasses
       )); ?>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 pr-16">
       <?php wp_nav_menu(array(
         'menu' => 'Footer 3',
         'menu_class' => $footerMenuClasses
