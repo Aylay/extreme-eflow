@@ -118,6 +118,10 @@ Theme Name: WordPress + Tailwind
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
   }
+
+  .picture-height picture img {
+    @apply h-full w-auto;
+  }
 }
 
 .burger .top {

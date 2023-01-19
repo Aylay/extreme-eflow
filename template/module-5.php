@@ -20,7 +20,7 @@
   <div class="grid max-lg:grid-cols-2 grid-cols-<?= $cols; ?>">
     <?php foreach ($args['logos'] as $logo) : ?>
       <div class="p-14 lg:p-20 flex justify-center items-center">
-        <div class="h-20 w-full">
+        <div class="h-20 w-full picture-height">
           <img
             src="<?= $logo['url'] ?>"
             alt="<?= $logo['alt'] ?>"

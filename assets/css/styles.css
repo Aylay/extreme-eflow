@@ -986,6 +986,10 @@ html {
   height: 100%;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-\[35rem\] {
   height: 35rem;
 }
@@ -1006,20 +1010,12 @@ html {
   height: .1rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .max-h-\[5\.5rem\] {
   max-height: 5.5rem;
 }
 
 .max-h-\[3rem\] {
   max-height: 3rem;
-}
-
-.max-h-20 {
-  max-height: 5rem;
 }
 
 .max-h-40 {
@@ -1526,6 +1522,11 @@ html {
           background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+.picture-height picture img {
+  height: 100%;
+  width: auto;
 }
 
 .burger .top {
