@@ -1,4 +1,4 @@
-<div class="relative h-[35rem] lg:h-[70rem] w-full">
+<div class="relative h-[35rem] lg:h-[70rem] w-full picture-cover">
   <img
     src="<?= $args['img']['url']; ?>"
     alt="<?= $args['img']['alt']; ?>"
