@@ -172,10 +172,10 @@ Theme Name: WordPress + Tailwind
 .frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit {
   @apply !border !border-solid !border-heavy-metal !text-m !font-bold !inline-block hover:!border-[#949594] hover:!text-white !text-heavy-metal hover:!bg-heavy-metal hover:!bg-opacity-50 !transition-colors !bg-white !rounded-none !py-6 !pl-8 !pr-20 !relative;
 }
-.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:hover::before {
+.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:hover::after {
   @apply bg-airplane-hover;
 }
-.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:before {
+.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:after {
   @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 right-6 bg-airplane bg-cover bg-no-repeat content-[''] transition-all;
 }
 .frm_style_style-formidable.with_frm_style .frm_error_style {

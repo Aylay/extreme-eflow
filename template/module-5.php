@@ -20,11 +20,13 @@
   <div class="grid max-lg:grid-cols-2 grid-cols-<?= $cols; ?>">
     <?php foreach ($args['logos'] as $logo) : ?>
       <div class="p-14 lg:p-20 flex justify-center items-center">
-        <img
-          src="<?= $logo['url'] ?>"
-          alt="<?= $logo['alt'] ?>"
-          class="max-h-20 h-full w-auto"
-        />
+        <div class="h-20 w-full">
+          <img
+            src="<?= $logo['url'] ?>"
+            alt="<?= $logo['alt'] ?>"
+            class="h-full w-auto"
+          />
+        </div>
       </div>
     <?php endforeach; ?>
   </div>

@@ -1006,6 +1006,10 @@ html {
   height: .1rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .max-h-\[5\.5rem\] {
   max-height: 5.5rem;
 }
@@ -1042,12 +1046,12 @@ html {
   width: auto;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .w-\[4rem\] {
   width: 4rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .max-w-1176px {
@@ -1072,10 +1076,6 @@ html {
 
 .max-w-\[3rem\] {
   max-width: 3rem;
-}
-
-.max-w-\[4rem\] {
-  max-width: 4rem;
 }
 
 .max-w-4xl {
@@ -1675,11 +1675,11 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:hover::before {
+.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:hover::after {
   background-image: url(../img/svg/airplane-hover.svg);
 }
 
-.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:before {
+.frm_style_style-formidable.with_frm_style .frm_submit .frm_button_submit:after {
   position: absolute;
   top: 50%;
   right: 1.5rem;
