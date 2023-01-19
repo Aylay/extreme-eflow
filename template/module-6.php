@@ -2,7 +2,7 @@
   <img
     src="<?= $args['img']['url']; ?>"
     alt="<?= $args['img']['alt']; ?>"
-    class="w-full h-full object-cover"
+    class="w-full h-full object-cover block"
   />
   <img
     src="<?= $args['logo']['url']; ?>"
