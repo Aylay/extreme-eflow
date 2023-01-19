@@ -7,7 +7,7 @@
 
 </main>
 
-<footer class="max-w-1176px mx-auto flex max-lg:flex-col max-lg:gap-16 mt-24 lg:mt-52 mb-12 lg:mb-24 max-lg:px-16 border-t border-solid border-heavy-metal border-opacity-10">
+<footer class="max-w-1176px mx-auto flex max-lg:flex-col max-lg:gap-16 mt-24 lg:mt-52 mb-12 lg:mb-24 max-lg:px-16 border-t border-solid border-heavy-metal border-opacity-10 pt-14 lg:pt-28">
   <div class="flex-1 flex flex-col gap-8">
     <img
       src="<?= $logo['url']; ?>"
