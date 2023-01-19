@@ -21,7 +21,7 @@
   <?php if ($args['cta']) : ?>
   <div>
     <a
-      class="link n3 text-s font-bold"
+      class="link n2 text-cta2 text-s font-bold"
       href="<?= $args['cta']['url']; ?>"
     >
       <?= $args['cta']['title']; ?>
