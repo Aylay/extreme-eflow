@@ -24,7 +24,7 @@
           <img
             src="<?= $logo['url'] ?>"
             alt="<?= $logo['alt'] ?>"
-            class="h-full w-auto"
+            class="h-full w-auto mx-auto"
           />
         </div>
       </div>
