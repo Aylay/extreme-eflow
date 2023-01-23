@@ -155,10 +155,10 @@ Theme Name: WordPress + Tailwind
 }
 .frm_style_style-formidable.with_frm_style .frm_form_field input,
 .frm_style_style-formidable.with_frm_style .frm_form_field textarea {
-  @apply !p-4 !w-full !border-0 !border-b !border-solid !border-heavy-metal !border-opacity-10 !shadow-none !text-s !font-bold !rounded-none !text-heavy-metal;
+  @apply !p-4 !w-full !border-0 !border-b !border-solid !border-heavy-metal !border-opacity-10 !shadow-none !text-m !font-bold !rounded-none !text-heavy-metal;
 }
 .frm_style_style-formidable.with_frm_style .frm_form_field select {
-  @apply !px-4 !pt-4 !pb-2 !w-full !border-0 !border-b !border-solid !border-heavy-metal !border-opacity-10 !shadow-none !text-s !font-bold !rounded-none !text-heavy-metal;
+  @apply !px-4 !pt-4 !pb-2 !w-full !border-0 !border-b !border-solid !border-heavy-metal !border-opacity-10 !shadow-none !text-m !font-bold !rounded-none !text-heavy-metal;
 }
 .frm_style_style-formidable.with_frm_style .frm_form_field input::placeholder,
 .frm_style_style-formidable.with_frm_style .frm_form_field textarea::placeholder {
