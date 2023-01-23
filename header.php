@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-  <?php if (get_field('code_tag_manager', 'options')): ?>
+  <?php if (get_field('tag_manager', 'options')): ?>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','<?php echo the_field('code_tag_manager', 'options'); ?>');</script>
+  })(window,document,'script','dataLayer','<?php echo the_field('tag_manager', 'options'); ?>');</script>
   <!-- End Google Tag Manager -->
 <?php endif; ?>
 
@@ -59,7 +59,7 @@
 <body class="relative">
   <div class="max-w-1512px mx-auto">
 
-    <?php if (get_field('code_tag_manager', 'options')) {
+    <?php if (get_field('tag_manager', 'options')) {
       include "_tagmanager.php";
     } ?>
 
